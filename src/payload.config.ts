@@ -20,6 +20,9 @@ export default buildConfig({
   collections: [
     {
       slug: 'posts',
+      access:{
+        read: () => true
+      },
       fields:[
         {
         name: 'title',
@@ -73,6 +76,9 @@ export default buildConfig({
     },
     { 
       slug: 'media',
+      access:{
+        read: () => true
+      },
       fields: [
         {
           name: 'alt',
@@ -83,6 +89,9 @@ export default buildConfig({
     },
     {
       slug: 'categories',
+      access:{
+        read: () => true
+      },
       fields: [
         {
           name: 'title',
