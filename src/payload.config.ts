@@ -22,9 +22,9 @@ export default buildConfig({
       slug: 'posts',
       access:{
         read: () => true,
-        create: ({ req: { user } }) => Boolean(user),
-        update: ({ req: { user } }) => Boolean(user),
-        delete: ({ req: { user } }) => Boolean(user),
+        create: () => true,
+        update: () => true,
+        delete: () => true,
       },
       fields:[
         {
@@ -81,9 +81,9 @@ export default buildConfig({
       slug: 'media',
       access:{
         read: () => true,
-        create: ({ req: { user } }) => Boolean(user),
-        update: ({ req: { user } }) => Boolean(user),
-        delete: ({ req: { user } }) => Boolean(user),
+        create: () => true,
+        update: () => true,
+        delete: () => true,
       },
       fields: [
         {
@@ -97,9 +97,9 @@ export default buildConfig({
       slug: 'categories',
       access:{
         read: () => true,
-        create: ({ req: { user } }) => Boolean(user),
-        update: ({ req: { user } }) => Boolean(user),
-        delete: ({ req: { user } }) => Boolean(user),
+        create: () => true,
+        update: () => true,
+        delete: () => true,
       },
       fields: [
         {
