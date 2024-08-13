@@ -115,8 +115,6 @@ export default buildConfig({
   plugins: [payloadCloud()],
   csrf: ['http://localhost:5173',
     'http://localhost',
-    'https://staging.code.run', // staging
-    'https://production.code.run', // production
   ],
   cors: ['http://localhost:5173', 'http://localhost'],
   rateLimit: {
