@@ -113,8 +113,12 @@ export default buildConfig({
     schemaOutputFile: path.resolve(__dirname, 'generated-schema.graphql'),
   },
   plugins: [payloadCloud()],
-  csrf: ['http://localhost:5173'],
-  cors: ['http://localhost:5173'],
+  csrf: ['http://localhost:5173',
+    'http://localhost',
+    'https://staging.code.run', // staging
+    'https://production.code.run', // production
+  ],
+  cors: ['http://localhost:5173', 'http://localhost'],
   rateLimit: {
     trustProxy: true,
   },
