@@ -124,8 +124,9 @@ export default buildConfig({
   plugins: [payloadCloud()],
   csrf: ['http://localhost:5173',
     'http://localhost',
+    'https://cru.io/'
   ],
-  cors: ['http://localhost:5173', 'http://localhost'],
+  cors: ['http://localhost:5173', 'http://localhost', 'https://cru.io/'],
   rateLimit: {
     trustProxy: true,
   },
