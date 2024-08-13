@@ -113,6 +113,12 @@ export default buildConfig({
     schemaOutputFile: path.resolve(__dirname, 'generated-schema.graphql'),
   },
   plugins: [payloadCloud()],
+  csrf: [
+    'http://localhost:5173'
+  ],
+  cors: [
+     'http://localhost:5173'
+   ],
   db: postgresAdapter({
     pool: {
       connectionString: process.env.DATABASE_URI,
